@@ -17,4 +17,11 @@
         currentCount++;
     }
 
+    protected override void OnInitialized()
+        {
+            Console.WriteLine("Counter component initialized.");
+            // For browser console logging in Blazor WebAssembly:
+            // Use JS interop to log to the browser console
+            // JS.InvokeVoidAsync("console.log", "Counter component initialized.");
+        }
 }
